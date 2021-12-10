@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: steelblue;
+  width: 90%;
+  height: 40vh;
+  margin: auto;
+  /*1.Habilitamos el flexbox*/
+  display: flex;
+
+  /*2. Definir Dirección y desbordamiento*/
+  /*flex-direction: row;
+    flex-wrap: nowrap;*/
+
+  /*Short-hand <dirección> <desbordamiento>*/
+  flex-flow: row nowrap;
+
+  /*ALINEAMIENTO HORIZONTAL*/
+  /*justify-content: center; /*row*/
+  /*align-items: center; /*column*/
+
+  /*ALINEAMIENTO VERTICAL*/
+  /*align-items: flex-end; /*row*/
+  /*justify-content: flex-end; /*column*/
+
+  /*  ALINEAMIENTO JUSTIFY-CONTENT
+        Fila (horizontal) Columna(vertical)
+
+       justify-content: flex-end
+    /**/
+  justify-content: center;
+
+  /*  ALINEAMIENTO ALIGN-ITEMS
+        No exista desbordamiento
+     Fila (Vertical) Columna(horizontal)
+
+        align-items: flex-end;       
+    /**/
+  align-items: flex-end;
+
+  /*o*/
+
+  /*  ALINEACIÓN ALIGN-CONTENT
+        exista desbordamiento
+        Fila (Vertical) Columna(horizontal)
+
+      align-content: center;
+    /**/
+}
+.item {
+  background-color: grey;
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  font-size: x-large;
+}
+/*}
+    .item:nth-child(3){
+     /*Auto Alineación
+      No exista desbordamiento
+      align-self: flex-start;
+    }*/
+
+/*.item:nth-child(6){
+         /*Auto Alineación
+      No exista desbordamiento
+      align-self: center;
+    }*/
+
+.item:nth-child(6){
+    /*Auto Alineación
+    No exista desbordamiento*/
+    align-self: stretch;
+    height: auto;
+    background-color: crimson;
+} 

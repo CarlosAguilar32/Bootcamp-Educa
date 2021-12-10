@@ -1,0 +1,19 @@
+caption{
+    color: blue;
+}
+thead tr th, tbody tr td strong , .especial{
+    color: darkorange;
+}
+
+tfoot tr th, tbody tr th{
+    color: red;
+}
+tbody tr td{
+    color: green;
+}
+
+table, td, th{
+    border-collapse:collapse;
+    padding: 5px;
+    border: 1px solid black;
+}

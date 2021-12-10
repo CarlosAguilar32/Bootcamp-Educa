@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tablas en HTML</title>
+
+    <!-- <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 2px solid black;
+      }
+    </style> -->
+  </head>
+
+  <body>
+    <!-- SHORTCUT para comentar codigo en VS 
+         CTRL + SHIFT + 7 -->
+
+    <p>Tabla con estilos</p>
+
+    <table>
+      <tr>
+        <th>Hoy</th>
+        <th>Mañana</th>
+        <th>Viernes</th>
+      </tr>
+      <tr>
+        <td>Soleado</td>
+        <td>Mayormente Soleado</td>
+        <td>Parcialmente nublado</td>
+      </tr>
+      <tr>
+        <td>19º C</td>
+        <td>17º C</td>
+        <td>12º C</td>
+      </tr>
+      <tr>
+        <td>E 13 km/h</td>
+        <td>E 11 km/h</td>
+        <td>E 16 km/h</td>
+      </tr>
+    </table>
+
+    <p>Tabla usando un scope</p>
+
+    <table>
+      <caption>
+        Guía del clima de los próximos dias
+      </caption>
+      <tr>
+        <th scope="row" >Día</th>
+        <th>Hoy</th>
+        <th>Mañana</th>
+        <th>Domingo</th>
+      </tr>
+      <tr>
+        <th>Condición</th>
+        <td>Soleado</td>
+        <td>Mayormente soleado</td>
+        <td>Parcialmente nublado</td>
+      </tr>
+      <tr>
+        <th>Temperatura</th>
+        <td>19°C</td>
+        <td>17°C</td>
+        <td>12°C</td>
+      </tr>
+      <tr>
+        <th>Vientos</th>
+        <td>E 13 km/h</td>
+        <td>E 11 km/h</td>
+        <td>S 16 km/h</td>
+      </tr>
+    </table>
+
+    <p>Combinando celdas</p>
+
+    <table>
+      <tr>
+        <th scope="col"> ¿Quien fue? </th>
+        <th>Día 1</th>
+        <th>Día 2</th>
+        <th>Día 3</th>
+        <th>Día 4</th>
+      </tr>
+      <tr>
+        <th>Mike (Lastimado)</th>
+        <td colspan="3">0 km</td>
+        <td>4 km</td>
+      </tr>
+      <tr>
+        <th>Susan</th>
+        <td>23 km</td>
+        <td>18 km</td>
+        <td>19 km</td>
+        <td>15 km</td>
+      </tr>
+    </table> 
+
+    <p>Combinando columnas</p>
+
+    <table border="2" >
+      <tr>
+        <th></th>
+        <th>Básico</th>
+        <th>Completo</th>
+      </tr>
+      <tr>
+        <th>Instalación</th>
+        <td rowspan="2">Gratis!</td>
+        <td>$49.99</td>
+      </tr>
+      <tr>
+        <th>Primer mes</th>
+        <td>$19.99</td>
+      </tr>
+      <tr>
+        <th>Segundo mes</th>
+        <td>$9.99</td>
+        <td>$29.99</td>
+      </tr>
+    </table> 
+    <table border="1">
+    <tr>
+        <th colspan="2">Nombres</th>
+        <th>Edad</th>
+        <th>Curso</th>
+    </tr>
+    <tr>
+        <td>Eduardo</td>
+        <td>Soria Gómez</td>
+        <td rowspan="3">12</td>
+        <td>Primero D</td>
+    </tr>
+    <tr>
+        <td>Carlos</td>
+        <td>Perez Días</td>
+       
+        <td>Tercero A</td>
+    </tr>
+
+    <tr>
+        <td>Martín</td>
+        <td>Pereira Silva</td>
+        <td>Primero B</td>
+    </tr>
+  </table>
+
+    <table border="2">
+        <caption> Tabla con combinación de filas y columnas</caption>
+      <tr>
+        <th>Celda 1</th>
+        <th>Celda 2</th>
+        <th>Celda 3</th>
+        <th>Celda 4</th>
+      </tr>
+      <tr>
+        <td rowspan="3" >Celda 5</td>
+        <td>Celda 6</td>
+        <td colspan="2">Celda 7</td>
+      </tr>
+      <tr>
+        <td>Celda 8</td>
+        <td>Celda 9</td>
+        <td rowspan="2">Celda 10</td>
+      </tr>
+
+      <tr>
+        <td colspan="2">Celda 11</td>
+      </tr>
+
+    </table>
+  </body>
+</html>

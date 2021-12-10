@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.form-input{
+    margin: 50px 10px;
+    clear: both;
+}
+
+/* Primera forma */ 
+span{
+    position: relative;
+}
+span::after{
+    position: absolute;
+    left: 0px;
+    top: -25px;
+    color: gray;
+}
+#nombre::after{
+    content: "Firstname";
+}
+#apellido::after{
+    content: "Lastname";
+}
+
+/* Segunda manera */ 
+
+label{
+    margin-right: 20px ;
+    float: left;
+}
+
+.custom_input {
+    float: left;
+    margin-left: 5px;
+}
+
+.custom_input > p {
+    /* margin-top: 5px; */
+    margin-bottom: 5px;
+    color: grey;
+}
+

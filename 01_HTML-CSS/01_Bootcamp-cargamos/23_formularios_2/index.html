@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Formularios 2</title>
+  </head>
+  <body>
+    <header>
+      <h4>Formulario parte 2</h4>
+      <hr />
+    </header>
+    <form
+      name="formulario"
+      action="/send.php"
+      method="post"
+      enctype="multipart/form-data"
+    >
+     <!-- Seleccion de fecha (Datepicker)  INPUT:DATE -->
+      Selecciona la fecha indicada:
+      <input
+        type="date"
+        name="fecha"
+        min="2018-03-25"
+        max="2018-05-25"
+        step="3"
+      />
+    <!-- Seleccion de hora (Timepicker)  INPUT:TIME -->
+      Selecciona hora deseada:
+      <input
+        type="time"
+        name="hora"
+        min="18:00"
+        max="21:00"
+        step="3600"
+        list="times"
+      />
+    <!-- Utilizando un datalist para corregir las restricciones visuales del Timepicker(input:time) -->
+      <datalist id="times">
+        <option value="17:00:00"></option>
+        <option value="18:00:00"></option>
+        <option value="19:00:00"></option>
+        <option value="20:00:00"></option>
+        <option value="21:00:00"></option>
+        <option value="22:00:00"></option>
+      </datalist>
+     <!-- Seleccion de mes  INPUT:MONTH -->
+      Selecciona el mes deseado:
+      <input
+        type="month"
+        name="mes"
+        value="2018-05"
+        min="2018-02"
+        max="2018-06"
+        step="1"
+      />
+      <!-- Seleccion de semanas  INPUT:WEEK -->
+      Selecciona la semana deseada:
+      <input
+        type="week"
+        name="semana"
+        value="2018-W18"
+        min="2018-W18"
+        max="2018-W20"
+        step="2"
+      />
+      <!-- Radio buttons (Selección Unica)  INPUT:RADIO -->
+      <p>
+        Sexo:
+        <input type="radio" name="genero" value="H" /> Hombre
+        <input type="radio" name="genero" value="M" /> Mujer
+      </p>
+
+      <!-- Un Checkbox (True or False)  INPUT:CHECKBOX -->
+
+      <input type="checkbox" name="empresa" checked />
+      ¿Eres autonomo/empresa?
+      <br /><br />
+
+      <!-- Seleccion multiple agrupada con <optgroup> -->
+      Selecciona la opcion deseada
+      <select name="combo" multiple>
+        <optgroup label="Opciones básicas">
+          <option value="1">Opción 1</option>
+        </optgroup>
+        <optgroup label="Opciones avanzadas">
+          <option value="2">Opción 2</option>
+          <option value="3" selected>Opción 3</option>
+        </optgroup>
+      </select>
+      <br /><br />
+
+      <!-- Seleccion multiple con un <datalist> -->
+      Selecciona la lista
+      <input type="text" list="items" />
+
+      <datalist id="items">
+        <option value="Lima">Lima</option>
+        <option value="Arequipa">Arequipa</option>
+        <option value="Lambayeque">Lambayeque</option>
+      </datalist>
+       <!-- Seleccionador de color INPUT:COLOR -->
+      <br />
+      Selecciona el color deseado
+      <input type="color" name="color" value="#1BF44A" />
+      <br />
+      <!-- Adjuntar archivos a un formulario INPUT:FILE -->
+      Adjunta tu CV
+      <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple />
+      <br />
+      
+      
+      <!-- Agrupación por tematica utilizando fielset-->
+      <fieldset>
+        <legend>Datos personales</legend>
+        <!-- Relacion campo texto dentro de un label-->
+        <label>
+          Nombre de usuario
+          <input
+            type="text"
+            name="nombre"
+            placeholder="ej. John"
+            tabindex="1"
+          />
+        </label>
+
+        <label>
+          Apellidos
+          <input
+            type="text"
+            name="nombre"
+            placeholder="ej. Smith"
+            tabindex="3"
+          />
+        </label>
+
+        <!-- Relacion campo texto label e input separados 
+            (asociados entre id='' y for='')-->
+        <label for="text_edad">Edad</label>
+        <input
+          id="text_edad"
+          type="number"
+          name="edad"
+          placeholder="ej. 18"
+          min="18"
+          max="100"
+          tabindex="2"
+        />
+
+        Sexo
+        <input type="radio" name="sexo" value="H" /> Hombre
+        <input type="radio" name="sexo" value="H" /> Mujer
+      </fieldset>
+    </form>
+  </body>
+</html>

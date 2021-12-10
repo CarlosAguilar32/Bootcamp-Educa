@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Ejercicio de selectores</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <h1 id="titulo">Estilos en la tabla</h1>
+
+  <table >
+    <caption class="colorazul">Título de la tabla</caption>
+    <thead class="colordorado">
+      <tr>
+        <th scope="col"></th>
+        <th scope="col" >Título columna 1</th>
+        <th scope="col" >Título columna 2</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr class="colordorado">
+        <th scope="row" >Título fila 1</th>
+        <td class="colorverde">Donec purus ipsum</td>
+        <td class="colorverde">Curabitur <em>blandit</em></td>
+      </tr>
+      <tr>
+        <th scope="row" class="colorrojo">Título fila 2</th>
+        <td class="colorverde"> Donec <strong class="colordorado">purus ipsum</strong></td>
+        <td class="colorverde">Curabitur blandit</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col" class="colorrojo">Título columna 1</th>
+        <th scope="col" class="colorrojo">Título columna 2</th>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,p{
+    margin: 20px 0px 10px 20px;
+}
+.form-input{
+    margin: 50px 10px;
+    clear: both;
+}
+span{
+    position: relative;
+}
+span::after{
+    position: absolute;
+    left: 0px;
+    top: 25px;
+    color: gray;
+}
+#lnombre{
+ margin-right: 25px;
+}
+#ltitle{
+    margin-right: 30px;
+}
+#lemail{
+    margin-right: 15px;
+}
+#code{
+    width: 40px;
+    margin-left: 15px;
+}
+#enviar{
+    width: 90px;
+    height: 30px;
+    margin-left: 20px;
+}
+#no{
+
+margin-left: 70px;
+    
+}
+#nombre::after{
+    content: "First Name"
+}
+
+#apellido::after{
+    content: "Last Name"
+}
+

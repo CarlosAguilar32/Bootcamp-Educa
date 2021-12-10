@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Custom Input File</title>
+  </head>
+  <body>
+    <form action="send.php">
+      <!-- Primera forma -->
+      <div class="form-input">
+
+        <label for="">Name</label>
+        
+        <span id="nombre">
+          <input type="text" name="nombre" />
+        </span>
+
+        <span id="apellido">
+          <input type="text" name="lastname" />
+        </span>
+      </div>
+
+      <!-- Segunda forma -->
+
+      <div class="form-input">
+        <label for="">Name</label>
+       
+        <div class="custom_input">
+          <p>Firstname</p>
+          <input type="text" name="nombre" />
+        </div>
+
+        <div class="custom_input">
+            <input type="text" name="nombre" />
+            <p>Lastname</p>
+        </div>
+      </div>
+   
+    </form>
+  </body>
+</html>

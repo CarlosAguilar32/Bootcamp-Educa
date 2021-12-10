@@ -1,0 +1,50 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  margin: 0;
+  
+}
+
+
+.card {
+  background-color: silver;
+  width: 30%;
+  height: 200px;
+  border-radius: 20px;
+}
+.card_head {
+  background-color: skyblue;
+  height: 20%;
+}
+
+.card_body {
+  background-color: steelblue;
+  height: 60%;
+  /*esi esd eii eid*/
+  border-radius: 0px 20px 10px 20px;
+
+}
+.card_footer {
+  background-color: teal;
+  height: 20%;
+  border-radius: 0px 0px 20px 28px;
+
+}
+
+
+/* Estos son estilos para el texto*/
+.texto_grande{
+    font-size: 2em;
+}
+.texto_mediano{
+    font-size: 14px;
+}
+.texto_pequeño{
+    font-size: 10px;
+}
+
+.texto_centrado{
+    text-align: centrado;
+}

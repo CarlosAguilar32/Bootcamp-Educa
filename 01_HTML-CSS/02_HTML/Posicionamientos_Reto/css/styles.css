@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-color: darkmagenta;
+    width: 700px;
+    height: 1200px;
+    margin: auto;
+   
+}
+.caja, .tapa {
+  background-image: url(https://thumbs.dreamstime.com/b/puntos-blancos-en-textura-roja-del-fondo-58753892.jpg);
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.377);
+  
+}
+.caja{
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 400px;
+}
+.tapa{
+width: 600px;
+height: 180px;
+position: absolute;
+top: 220px; 
+z-index: 1;
+}
+.mensaje{
+  position: absolute;
+  top: -190px;
+  left: 0px;
+  text-align: center;
+  color: #fff;
+}
+
+.mensaje>p{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 40px;
+}
+.mensaje>h1{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 80px;
+
+}
+/* .tapa:hover{
+  top: 10px;
+}  */
+.caja:hover{
+  top: 600px;
+}
+
+
+
+.rec01, .rec02{
+    background-color:gold;
+    opacity: 80%;   
+}
+
+.rec01{
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    height: 70px;
+}
+
+.rec02{
+    position: absolute;
+    left: 270px;
+    width: 70px;
+    height: 100%;
+}
+

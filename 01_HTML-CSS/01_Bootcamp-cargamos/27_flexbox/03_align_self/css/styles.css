@@ -1,0 +1,56 @@
+*{
+   margin: 0;
+   padding: 0; 
+}
+
+.container {
+    background-color: steelblue;
+    width: 90%;
+    height: 40vh;
+    margin: auto;
+    /* 1. Habilitamos en flexbox*/
+    
+    display: flex;
+
+    /* 2. Definir Direccion y el desbordamiento*/
+
+    flex-direction: row;
+    flex-wrap: nowrap; /* wrap -> Varios de ...*/
+    
+    /* Short-hand <direccion> <desbordamiento>*/
+    flex-flow: row nowrap;
+
+    /* Alineamiento con Justify-Content
+    Fila ->Horizontal y Columna ->Vertical */
+    justify-content: center;
+
+    /* Alineacion con Align-Items
+    No exista desbordamiento (Una linea)
+    Fila->Vertical y  Columna->Horizontal*/
+    align-items : flex-end;
+
+    /* ó */
+
+    /* Alineacion con Align-Content
+    Exista desbordamiento (Varias lineas)
+    Fila->Vertical y  Columna->Horizontal*/
+    /* align-content: flex-start; */
+
+}
+.item{
+    background-color: grey;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: x-large;
+}
+
+.item:nth-child(6){
+    /*Auto Alineación*/
+   /* No exista desbordamiento (Una linea)*/
+   height: auto;
+   align-self: stretch;
+   background-color: crimson; 
+}

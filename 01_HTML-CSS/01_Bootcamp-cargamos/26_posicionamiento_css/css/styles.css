@@ -1,0 +1,92 @@
+*{
+   margin: 0;
+   padding: 0; 
+}
+body{
+    background-color: darkslategray;
+
+}
+
+/*POSICIONAMIENTO ABSOLUTO Y RELATIVO*/
+.parent{
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background: skyblue;
+    position: relative;
+    top: 60px;
+}
+.child{
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    position: absolute;
+    z-index: 2;
+}
+
+.child:nth-child(1){
+    top: 150px;
+    left: 150px;
+}
+.child:nth-child(2){
+    top:0px;
+    right:0px;
+}
+.child:nth-child(3){
+    left: 0;
+    bottom: 0px;
+}
+
+.grand-child{
+    width: 40px;
+    height: 40px;
+    background: yellowgreen;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.balloon{
+    width: 40px;
+    height: 40px;
+    background: darkslateblue;
+    border-radius: 50%;
+    color: white;
+    font-size: smaller;
+    position: absolute;
+}
+
+.balloon:nth-child(1) {
+    top: -40px;
+    left: 30px;
+}
+.balloon:nth-child(2) {
+    right: -40px;
+    bottom: 30px;
+}
+.balloon:nth-child(3) {
+    /* bottom: -40px; */
+    top: 100px;
+    left: 30px;
+}
+.balloon:nth-child(4) {
+    top: 30px;
+    right: 100px;
+}
+
+/*POSICIONAMIENTO FIJO*/
+
+.rectangulo{
+    width: 200px;
+    height: 40px;
+    background-color: #47f05e;
+    top: 40px;
+    right: 40px;
+    z-index: 3;
+}
+.fijo {
+    position: fixed;
+}
+.pegajoso {
+    position: sticky;
+}

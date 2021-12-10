@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: darkslategray;
+  margin: auto;
+  margin-top: 80px;
+}
+
+/* POISICIONAMIENTO ABSOLUTO Y RELATIVO */
+.parent {
+  background-color: skyblue;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.child {
+  background-color: tomato;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.grandchild {
+  width: 50px;
+  height: 50px;
+  background-color: yellowgreen;
+  position: absolute;
+}
+.balloon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: darkslateblue;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: x-small;
+}
+
+/* Cuadros naranja */
+.child:nth-child(1) {
+  top: 150px;
+  left: 150px;
+}
+.child:nth-child(2) {
+  top: 0px;
+  right: 0px;
+}
+.child:nth-child(3) {
+  bottom: 0px;
+  left: 0px;
+}
+
+/* Cuadros verde */
+.child > .grandchild {
+  left: 25px;
+  top: 25px;
+}
+
+/* Circulos morados */
+.balloon:nth-child(1) {
+  top: -50px;
+  left: 25px;
+}
+.balloon:nth-child(2) {
+  top: 25px;
+  left: 100px;
+}
+.balloon:nth-child(3) {
+  bottom: -50px;
+  left: 25px;
+}
+.balloon:nth-child(4) {
+  top: 25px;
+  left: -50px;
+}
+
+
+/* POISICIONAMIENTO FIJO */
+.rectangulo{
+  
+  width: 200px;
+  height: 40px;
+  background-color: goldenrod;
+  top: 40px;
+  right: 40px;
+  z-index: 3;
+}
+
+.fijo{
+  position: fixed;
+}
+.pegajoso{
+  position: sticky;
+}

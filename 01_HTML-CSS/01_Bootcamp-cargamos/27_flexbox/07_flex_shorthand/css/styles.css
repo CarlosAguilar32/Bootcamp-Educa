@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0; 
+ }
+header{
+    text-align: center;
+    margin: 10px 0px;
+}
+.container {
+     background-color: grey;
+     width: 100%;
+     height: 80vh;
+     margin: auto;
+ }
+ .item{
+     background-color:lightpink;
+     width: 100px; 
+     color: black;
+     font-size: x-large;
+
+ }
+ .item:nth-child(even){
+     background-color: plum;
+ }
+
+ .container {
+     display: flex;
+     /* flex-direction: row;
+     flex-wrap: nowrap; */
+     flex-flow: row nowrap;
+     justify-content: flex-start;
+     align-items: stretch;
+ }
+.item{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.caja{
+    padding: 50px;
+    background-color: purple;
+    color: white;
+    text-align: center;
+}
+ /* 
+ Propiedad flex 
+ =================
+ flex-grow : 0 ; -> Factor de crecimiento (ED +)
+ flex-shrink : 1; -> Factor de decreciento (ED -)
+ flex-basis : auto -> Tamaño Base
+
+ flex: 0 1 auto;
+ flex: none -> 0 0 auto;
+ flex: auto -> 1 1 auto
+
+ flex: N -> N 0 0
+ */
+
+
+ .item:nth-child(1){
+     flex: 25;
+ }
+ .item:nth-child(2){
+    flex: 45;    
+}
+.item:nth-child(3){
+    flex: 15; 
+}
+.item:nth-child(4){
+    flex: 40;
+}

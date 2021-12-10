@@ -1,0 +1,17 @@
+@import url('vars.css');
+/* Fondos de color */
+.bg-primary{
+    background: var(--color-primary);
+}
+.bg-secondary{
+    background: var(--color-secondary);
+}
+.bg-info{
+    background: var(--color-info);
+}
+.bg-danger{
+    background: var(--color-danger);
+}
+.bg-success{
+    background: var(--color-success);
+}

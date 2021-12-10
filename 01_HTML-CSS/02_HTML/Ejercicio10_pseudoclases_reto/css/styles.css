@@ -1,0 +1,10 @@
+#primero li:nth-child(even){
+   text-decoration: underline;
+}
+#primero li:nth-child(odd){
+    text-decoration: line-through;
+}
+#segundo li:nth-child(4n+4){
+color:green;
+}
+

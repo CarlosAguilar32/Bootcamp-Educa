@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Facebook</title>
+</head>
+
+<body>
+
+  <header>
+    <div id="logo">
+      <h1>Facebook</h1>
+    </div>
+    <div id="iniciar">
+      <form id="header">
+        <!-- <h1>Facebook</h1> -->
+
+        <div id="correo">
+          Email or Phone <br>
+          <input type="text" />
+
+        </div>
+        <div id="contraseña">
+          Password <br>
+          <input type="password" />
+
+        </div>
+
+
+        <div class="Button_SignIn">
+          <button type="submit">Sign In</button>
+        </div>
+      </form>
+
+    </div>
+
+  </header>
+
+
+  <form id="body">
+    <div id="imagen">
+      <img src="Imagen.png" alt="">
+
+    </div>
+    <div id="registro">
+      <h1>Create a new account</h1>
+      <p>it's free and alway will be</p>
+      <br>
+
+      <input id="Name" type="text" placeholder="First name" />
+      <input id="SName" type="text" placeholder="Surnamename" />
+
+      <input id="email" type="email" type="number" placeholder="Mobile number or email addres" />
+      <input id="password" type="password" placeholder="New Password" />
+
+      <label for="">Birthday</label>
+
+      <div id="birth">
+
+        <input id="day" type="number" min="1" max="31" />
+        <input id="month" type="text" list="months" />
+        <datalist id="months">
+          <option value="Enero">Enero</option>
+          <option value="Febrero">Febrero</option>
+          <option value="Marzo">Marzo</option>
+          <option value="Abril">Abril</option>
+          <option value="Mayo">Mayo</option>
+          <option value="Junio">Junio</option>
+          <option value="Julio">Julio</option>
+          <option value="Agosto">Agosto</option>
+          <option value="Septiembre">Septiembre</option>
+          <option value="Octubre">Octubre</option>
+          <option value="Noviembre">Noviembre</option>
+          <option value="Diciembre">Diciembre</option>
+        </datalist>
+        <input id="year" type="number" min="1960" max="2003" />
+        <label for="birth">Why do I need to provide my data of birth?</label>
+
+      </div>
+
+      <p id="genero">
+
+        <input type="radio" name="genero" value="F" /> Female
+        <input type="radio" name="genero" value="M" /> Male
+      </p>
+
+
+      <p id="Terms">
+        By clicking Create Account, you agree to our <a>Terms</a> and confirm
+        that you have read our <a>Data Policy</a>, including our
+        <a>Cookie Use Policy</a>. You may receive SMS messeage notifications
+        from Facebook and can opt out at any time.
+      </p>
+
+      <div class="Button_Create">
+        <button type="submit">Create Account</button>
+      </div>
+  </form>
+  </div>
+
+</body>
+
+</html>

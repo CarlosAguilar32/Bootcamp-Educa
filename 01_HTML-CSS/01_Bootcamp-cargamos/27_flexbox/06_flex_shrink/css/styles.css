@@ -1,0 +1,64 @@
+        *{
+    margin: 0;
+    padding: 0; 
+ }
+header{
+    text-align: center;
+    margin: 10px 0px;
+}
+.container {
+     background-color: grey;
+     width: 600px;
+     height: 80vh;
+     margin: auto;
+ }
+ .item{
+     background-color:lightgreen;
+     width: 100px; 
+     height: 100px; 
+     color: black;
+     font-size: x-large;
+
+ }
+ .item:nth-child(even){
+     background-color: lightseagreen;
+ }
+ 
+ /* Total espacio = 600px;
+    Tamaño elementos = 100px;
+    Total elementos = 7;
+
+    Espacio Disponible = 600px - 7*(100) 
+                       = 600px - 700px
+                       = -100px;
+
+    Unidad de Decrecimiento = -100px / 7;
+                            = -14.2px
+
+    Tam. real Item = Basis - Und.Decrecimiento * flex-shrink
+                     = 100px - (14.2px (1))
+                     = 85.8px;
+    
+    Tam.real Item 3 = Basis - Und.Decrecimiento * flex-shrink
+                    = 100px - (14.2px * 3)
+                    = 100px - 42.6px
+                    = 57.4px;
+
+ */
+
+ .container {
+     display: flex;
+     /* flex-direction: row;
+     flex-wrap: nowrap; */
+     flex-flow: row nowrap;
+
+     justify-content: flex-start;
+     align-items: center;
+ }
+ .item {
+     flex-basis: 100px;
+     flex-shrink: 1;
+ }
+ .item:nth-child(4){
+     flex-shrink: 0;
+ }

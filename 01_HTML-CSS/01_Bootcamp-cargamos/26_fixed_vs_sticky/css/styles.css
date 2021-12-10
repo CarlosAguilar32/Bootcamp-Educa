@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg-red{
+    background: crimson;
+}
+.bg-blue {
+    background: dodgerblue;
+}
+body {
+    /* white-space: nowrap; */
+}
+.column{
+    /* display: table-cell; */
+
+    float: left;
+    width: 50%;
+
+    /* display: inline-block;
+    width: 50%;
+    white-space: normal; */
+}
+br{
+    clear: both;
+}
+.fijo {
+    width: 50%;
+    height: 300px;
+    /* background:linear-gradient(to right,blue 10%, red 50%); */
+    background: radial-gradient(circle,#b439ec 10%, #4744e7 100%);
+    position: fixed;
+    top: 20px;
+}
+.pegajoso {
+    width: 100%;
+    height: 40px;
+    background:greenyellow ;
+    position: sticky;
+    top: 20px;
+}

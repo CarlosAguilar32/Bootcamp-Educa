@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 15vh;
+    text-align: center;
+    margin: 5px 0px;
+}
+img{
+margin: 0% 35%;
+width: 350px;
+height: 350px;
+}
+#mensaje{
+    text-align: center;
+    margin: 15px 0;
+    font-size: xx-large;
+}

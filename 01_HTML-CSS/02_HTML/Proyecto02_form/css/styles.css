@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+label{
+    display: block;
+    margin: 10px 5px;
+}
+h1{
+    color: rgb(22, 22, 180);
+}
+.negrita{
+    font-weight: bold;
+}

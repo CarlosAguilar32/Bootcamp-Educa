@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form
+      name="formulario"
+      method="post"
+      action="/send.php"
+      enctype="multipart/form-data"
+    >
+      <!-- Campo de entrada de fecha -->
+      <label >
+        Seleccione la fecha deseada:
+        <input
+          type="date"
+          name="fecha"
+          min="2018-03-25"
+          max="2018-05-25"
+          step="2"
+        />
+        
+      </label>
+      <!-- Campo de entrada de hora -->
+      Seleccione la hora deseada:
+      <input
+        type="time"
+        name="hora"
+        min="18:00"
+        max="21:00"
+        step="3600"
+        list="times"
+      />
+      <datalist id="times">
+        <option value="17:00:00"></option>
+        <option value="18:00:00"></option>
+        <option value="19:00:00"></option>
+        <option value="20:00:00"></option>
+        <option value="21:00:00"></option>
+        <option value="22:00:00"></option>
+      </datalist>
+      <!-- Campo de entrada de mes -->
+      Seleccione el mes deseado:
+      <input
+        type="month"
+        name="mes"
+        value="2018-05"
+        min="2018-02"
+        max="2018-06"
+        step="2"
+      />
+      <!-- Campo de entrada de semana -->
+      Seleccione la semana deseada:
+      <input
+        type="week"
+        name="semana"
+        value="2018-w18"
+        min="2018-w10"
+        max="2018-w20"
+        step="2"
+      />
+      <!-- Botones de opción -->
+      <p>
+        Sexo:
+        <input type="radio" name="genero" value="H" /> Hombre
+        <input type="radio" name="genero" value="M" /> Mujer
+      </p>
+
+      <!-- Casillas de verificación (marcada por defecto) -->
+
+      <input type="checkbox" name="empresa" checked />
+      ¿Eres autónomo/empresa?
+      <br /><br />
+      <!-- Lista de selección -->
+      Selecciona la opción deseada:
+      <select name="combo">
+        <!-- Opciones de la lista -->
+        <option value="1">Opción 1</option>
+        <option value="2" selected>Opción 2</option>
+        <option value="3">Opción 3</option>
+      </select>
+      <br /><br />
+      <!-- Lista de selección multiple -->
+      <select name="combo" multiple>
+        <!-- Formato alternativo con atributo label -->
+        <optgroup label="Opciones básicas">
+          <option value="1" label="Opción 1"></option>
+        </optgroup>
+        <optgroup label="Opciones avanzadas">
+          <option value="2" label="Opción 2"></option>
+          <option value="3" label="Opción 3"></option>
+        </optgroup>
+      </select>
+      <br /><br />
+      <!-- Campo de texto combinado con la lista de opciones -->
+      <input type="text" list="items" />
+      <!-- Lista de opciones     -->
+      <datalist id="items">
+        <option value="Arequipa">Arequipa</option>
+        <option value="Lima">Lima</option>
+        <option value="Guatemala">Guatemala</option>
+      </datalist>
+      <br />
+
+      <!-- Selección de color  -->
+      Selecciona el color deseado:
+      <input type="color" name="color" value="#1BF44A" />
+      <br />
+
+      Adjunta tu CV
+      <!-- ¡No olvides el enctype! -->
+      <!-- Campo de selección de archivo -->
+      <input type="file" name adjunto accept=".pdf, .jpg, .png" multiple />
+
+      <br />
+
+      <!-- Agrupación de campos -->
+
+      <fieldset>
+        <legend>Datos personales</legend>
+
+        <!-- Campo de texto -->
+        <label >
+          Nombre de usuario:
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Por ej: John"
+            tabindex="1"
+          />
+        </label>
+        
+        Apellidos:
+        <input
+          type="text"
+          name="apellidos"
+          placeholder="Por ej: Smith"
+          tabindex="2"
+        />
+
+        <!-- Campo numérico -->
+        Edad:
+        <input
+          type="numer"
+          name="edad"
+          min="18"
+          max="100"
+          placeholder="18"
+          tabindex="3"
+        />
+
+        <!-- Botón radio de opción -->
+
+        <label>
+          Sexo:
+          <input type="radio" name="sexo" value="H" />Hombre
+          <input type="radio" name="sexo" value="M" />Mujer
+        </label>
+      </fieldset>
+    </form>
+  </body>
+</html>

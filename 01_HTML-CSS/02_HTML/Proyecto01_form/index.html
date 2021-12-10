@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Simple Event Registration</h1>
+    <p>Fill out the form to register to our event</p>
+
+    <form action="send.php">
+      <div class="form-input">
+        <label for="" id="lnombre">Name</label>
+
+        <span id="nombre">
+          <input type="text" name="nombre" />
+        </span>
+        <span id="apellido">
+          <input type="text" name="nombre" />
+        </span>
+      </div>
+
+      <div class="form-input">
+        <label id="ltitle" for="">Title</label>
+        <input type="text" />
+      </div>
+
+      <div class="form-input">
+        <label id="company" for="">Company</label>
+        <input type="text" />
+      </div>
+
+      <div class="form-input">
+        <label id="lemail" for="">E-mail</label>
+        <input type="email" placeholder="ex: myname@example.com" />
+      </div>
+
+      <div class="form-input">
+        <label for=""
+          >Phone <br />
+          Number</label
+        >
+        <span >
+          <input id="code" type="number" name="code" />
+        </span>
+
+        -
+        <span id="phone">
+          <input type="tel" name="nombre" />
+        </span>
+      </div>
+      <div class="form-input">
+        <label for="">Are yo an existing customer?</label>
+        <br />
+        <input type="radio" name="custumer" value="Y" />Yes
+        <input id="no" type="radio" name="custumer" value="N" />No
+      </div>
+
+      <input id="enviar" type="submit" value="Register" />
+ 
+    </form>
+  </body>
+</html>

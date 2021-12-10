@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+img {
+  margin-left: 90px;
+  margin-top: 30px;
+  width: 150px;
+  height: 320px;
+}
+body {
+  width: 1263px;
+  height: 310px;
+  margin: auto;
+}
+#body #imagen {
+  width: 750px;
+  height: 210px;
+  float: left;
+}
+#body #registro {
+  width: 512px;
+  height: 210px;
+  float: left;
+  margin-top: 20px;
+}
+header h1 {
+  color: #fff;
+  font-size: 70px;
+  margin: 0 10px;
+}
+#logo {
+  width: 50%;
+  float: left;
+}
+
+#header {
+  background-color: #4d6eaa;
+  width: 1263px;
+  height: 95px;
+  color: #fff;
+}
+#header input {
+  width: 170px;
+  height: 20px;
+}
+#header #correo,
+#header #contraseña {
+  float: left;
+  margin: 10px 10px;
+}
+#body {
+  background-color: #ecf0f2;
+  width: 1263px;
+  height: 610px;
+}
+.Button_SignIn > button {
+  background-color: #5f80b5;
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  width: 50px;
+  height: 25px;
+  float: left;
+  margin: 25px 5px;
+}
+
+.Button_Create > button {
+  background-color: #72aa5e;
+  border: none;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.185);
+  font-size: x-large;
+  margin: 10px 0px;
+}
+a {
+  color: #4d6eaa;
+}
+#Name,
+#SName {
+  width: 120px;
+  height: 25px;
+  padding: 0px 3px;
+  margin-bottom: 10px;
+}
+#email,
+#password {
+  margin-bottom: 10px;
+  display: block;
+  width: 254px;
+  height: 25px;
+  padding: 0px 3px;
+}
+#day,
+#year {
+  text-align: center;
+  width: 55px;
+  height: 20px;
+  display: inline;
+  margin: 2px 0px;
+}
+#month {
+  text-align: center;
+  width: 95px;
+  height: 20px;
+  display: inline;
+  margin: 2px 0px;
+}
+#birth label,
+#body > #Terms {
+  font-size: small;
+}
+#genero,
+#birth {
+  margin-bottom: 10px;
+}

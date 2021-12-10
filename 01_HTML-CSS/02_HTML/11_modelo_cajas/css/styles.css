@@ -1,0 +1,28 @@
+h1 {
+  color: blue;
+}
+p {
+  color: white;
+  background-color: crimson;
+  padding: 15px;
+  /*padding: 0px 50px 60px 80px ;
+
+    padding-top: 15px;
+    padding-right: 150px;
+    padding-bottom: 15px;
+    padding-left: 150px;*/
+
+  border: 10px solid powderblue;
+  /* border-top: 20px solid yellow;
+  border-right: 20px solid blue;
+  border-left: 20px solid blue;
+  border-bottom: 20px solid yellow; */
+
+  margin: 50px;
+  /*margin: 80px 100px 10px 25px;*/
+    
+    margin-top: 80px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}

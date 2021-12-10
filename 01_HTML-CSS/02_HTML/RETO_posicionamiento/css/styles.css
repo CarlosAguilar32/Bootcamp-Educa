@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: darkslategray;
+    margin: auto;
+    margin-top: 80px;
+}
+.tapa{
+    background-image: url(https://thumbs.dreamstime.com/b/puntos-blancos-en-textura-roja-del-fondo-58753892.jpg);  
+    width: 700px;
+    height: 200px;
+}
+.pegajoso{
+ position: sticky;   
+}

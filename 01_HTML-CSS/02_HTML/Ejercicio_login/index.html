@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/400569942e.js"></script>
+    <title>Formulario ejercicio</title>
+  </head>
+
+  <body>
+    <form name="formulario" action="send.php" method="post">
+      <!-- CABECERA DEL FORMULARIO -->
+      <div class="form_header">
+        <h3>Login</h3>
+        <i class="fas fa-lock"></i>
+      </div>
+
+      <!-- CUERPO DEL FORMULARIO -->
+      <div class="form_body">
+        <input type="text" placeholder="Username" required />
+        <input type="password" placeholder="Password" required />
+
+        <!-- CHECKBOX PERSONALIZADO -->
+        <div class="custom_checkbox">
+          <input type="checkbox" id="keep_me" required />
+          <label for="keep_me"> Keep me logged in</label>
+        </div>
+      </div>
+      <!-- PIE DEL FORMULARIO  -->
+      <div class="form_footer">
+        <button type="submit">
+          <i class="fas fa-sign-in-alt"></i>
+          SIGN IN
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

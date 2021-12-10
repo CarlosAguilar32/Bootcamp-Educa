@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form name="formulario" method="post" action="/send.php">
+      <label for=""> Nombre de usuario:</label>
+      <input
+        type="text"
+        name="nombre"
+        value=""
+        placeholder="user123"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <!-- Campo de entrada de teléfono -->
+      <label for="">Teléfono:</label>
+      <input type="tel" name="telefono" placeholder="+XX XXX XXXXXX" />
+      <!-- Campo de entrada de email -->
+      <label for="">Email:</label>
+      <input type="email" name="correo" placeholder="nomre@dominio.com" />
+      <!-- Campo de entrada de url -->
+      <label for="">Página web:</label>
+      <input type="url" name="web" placeholder="https://pagina.com/" />
+
+      <label for="">Password:</label>
+      <input type="password" name="pass" placeholder="Contraseña" />
+
+      <!-- <label for="">Oculto...</label> -->
+      <input type="hidden" name="information" value="72625" />
+
+      <label>Bio</label>
+      <textarea cols="15" rows="5" spellcheck="true" wrap="hard"> </textarea>
+
+      <!-- Numero entre 10 y 50, de 5 en 5. Valor por defecto: 25 -->
+      <label> Edad</label>
+      <input type="number" name="edad" value="25" min="10" max="50" step="5" />
+      <label for=" Min. 10 Max. 50"></label>
+      <!-- Su misma versión, utilizando el slider en un rango numérico -->
+      <input
+        type="range"
+        name="edad_range"
+        value="25"
+        min="10"
+        max="50"
+        step="5"
+      />
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

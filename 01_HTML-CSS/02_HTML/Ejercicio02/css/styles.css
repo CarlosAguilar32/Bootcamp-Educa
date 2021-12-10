@@ -1,0 +1,33 @@
+p {
+  text-align: justify;
+}
+
+body {
+  padding: 0px 10px;
+}
+
+h1 {
+  border: 2px solid blue;
+  padding: 10px;
+  margin: 30px 0px;
+}
+
+#subd {
+  border: 2px solid gray;
+  padding: 5px;
+  margin: 15px 0px;
+}
+#sub2 {
+  border: 2px solid gray;
+}
+
+li {
+  text-align: justify;
+}
+#datos {
+  border: 2px solid rgb(96, 219, 96);
+}
+#datos li {
+  margin: 15px 0px;
+  text-align: justify;
+}

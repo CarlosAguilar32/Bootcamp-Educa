@@ -1,0 +1,22 @@
+* {
+    font-size: 20px;
+}
+caption{
+   color: rgb(0, 0, 255); 
+}
+
+/* thead tr th {
+    color:darkorange;
+} */
+
+.especial, td strong{
+    color:darkorange;
+}
+
+td{
+    color:green;
+}
+
+tbody tr th , tfoot tr th {
+    color:crimson;
+}

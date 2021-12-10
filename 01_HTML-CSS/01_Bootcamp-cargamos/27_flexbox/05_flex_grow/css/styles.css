@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0; 
+ }
+ .container {
+     background-color: steelblue;
+     width: 800px;
+     height: 100vh;
+     margin: auto;
+     display: flex; 
+     flex-flow: row nowrap;
+ 
+ }
+ .item{
+     background-color: seagreen;
+
+     width: 100px; /*Ignorado*/
+     height: 100px; 
+     color: white;
+     font-size: x-large;
+
+     /* Tamaño base -> row(width) column(height) */
+     flex-basis:100px;
+     /* ¿ Cuanto voy a crecer ?*/
+     flex-grow: 1;
+ }
+ .item:nth-child(even){
+     background-color: slateblue;
+ }
+ 
+ .item:nth-child(2){
+    flex-grow: 3;
+ }
+ 
+ /* 
+ Espacio Total: X; 1000px;
+
+ Espacio disponible : X - 200px = 800px  ;
+ Sumatoria del flex-grow: 1;
+ Unidad de crecimiento :  X / 1 = X; 
+
+ Item 1 ,3, 4 : 
+ flex-grow o factor de crecimiento : 1
+ Cuanto crecí = factor de crecimiento * Und de crecimiento
+ Cuanto crecí =  1 * 66.6px =  66.6px
+
+ ¿Cual es mi tamaño actual?
+ Tamaño base +  Cuanto crecí
+ 100px + 66.6px;
+ 166.6px
+
+
+ Item 2 : 
+ flex-grow o factor de crecimiento : 3
+ Cuanto crecí = factor de crecimiento * Und de crecimiento
+ Cuanto crecí =  3 * 66.6px =  199.8px
+
+ ¿Cual es mi tamaño actual?
+ Tamaño base +  Cuanto crecí
+ 100px +  199.8px
+ =299.8px 300px
+ */
+
+

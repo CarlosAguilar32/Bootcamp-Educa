@@ -1,0 +1,130 @@
+header {
+  width: 1000px;
+  height: 125px;
+  background-color: black;
+}
+#navegacion {
+  width: 300px;
+  height: 850px;
+  background-color: none;
+  float: left;
+}
+nav {
+  width: 275px;
+  height: 410px;
+  background-color: black;
+  margin: 10px;
+}
+#contenido {
+  width: 700px;
+  height: 850px;
+  background-color: none;
+  float: left;
+}
+#cuerpo {
+  width: 1000px;
+   height: 860px; 
+ 
+}
+#primero {
+  width: 700px;
+  height: 425px;
+  background-color: none;
+  margin: 0px 0px;
+}
+#segundo {
+  width: 700px;
+  height: 425px;
+  background-color: white;
+  margin: 0px 0px;
+}
+#articulo {
+  width: 370px;
+  height: 405px;
+  background-color: white;
+  float: left;
+  margin: 10px 10px;
+}
+
+aside {
+  width: 290px;
+  height: 175px;
+  background-color: chartreuse;
+  float: right;
+  margin: 15px 10px;
+}
+#at {
+  margin-top: 20px;
+}
+footer {
+  width: 1000px;
+  height: 40px;
+  margin: 0px 0px;
+  background-color: black;
+  /* clear: both; */
+  
+}
+nav ul {
+  color: white;
+}
+
+nav a {
+  line-height: 70px;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+}
+#contenedor {
+  width: 1000px;
+  height: 1150px;
+  background-image: url(https://www.solofondos.com/wp-content/uploads/2015/11/21omxpw.jpg);
+  margin: auto;
+}
+#logo1 {
+  float: left;
+}
+
+#logo2 {
+  float: right;
+}
+
+#logo1 img,
+#logo2 img {
+  width: 120px;
+  height: 120px;
+}
+
+H1 {
+  color: white;
+  text-align: center;
+  font-size: 70px;
+}
+header H1 p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin: -10px;
+}
+
+
+
+#contenido p,
+#contenido h2,
+#segundo h2 #segundo p {
+  text-align: justify;
+  margin: 2px 10px;
+}
+img,
+iframe {
+  width: 290px;
+  height: 175px;
+}
+footer p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+p {
+  font-size: 17px;
+}

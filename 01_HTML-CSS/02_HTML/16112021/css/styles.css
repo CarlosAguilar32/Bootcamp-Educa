@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.body {
+  width: 800px;
+  height: 500px;
+  background-color: #95acf7;
+  position: relative;
+  margin-top: 30px;
+}
+.encabezado,
+.body,
+.pie {
+  left: 25px;
+}
+.encabezado div,
+.cuerpo div,
+.pie div {
+  background-color: #e2ba54;
+}
+.encabezado div,
+.cuerpo div,
+.pie div,
+.encabezado,
+.cuerpo,
+.pie {
+  position: absolute;
+}
+.encabezado {
+  width: 750px;
+  height: 150px;
+  top: 25px;
+}
+
+.encabezado > div:first-child {
+  width: 250px;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+.encabezado > div:last-child {
+  width: 480px;
+  height: 100%;
+  top: 0px;
+  left: 270px;
+}
+.cuerpo {
+  width: 750px;
+  height: 100px;
+  top: 190px;
+  left: 25px;
+}
+.cuerpo div {
+  height: 75px;
+}
+.cuerpo > div:nth-child(1),
+.cuerpo > div:nth-child(2),
+.cuerpo > div:nth-child(3),
+.cuerpo > div:nth-child(4) {
+  width: 125px;
+}
+.cuerpo > div:nth-child(2) {
+  left: 135px;
+}
+.cuerpo > div:nth-child(3) {
+  left: 270px;
+}
+.cuerpo > div:nth-child(4) {
+  left: 405px;
+}
+.cuerpo > div:nth-child(5) {
+  width: 210px;
+  left: 540px;
+}
+.pie {
+  width: 750px;
+  height: 200px;
+  top: 280px;
+}
+
+.pie div {
+  height: 200px;
+}
+.pie > div:nth-child(1) {
+  width: 250px;
+}
+.pie > div:nth-child(2) {
+  width: 370px;
+  left: 270px;
+}
+.pie > div:nth-child(3) {
+  width: 95px;
+  left: 655px;
+}

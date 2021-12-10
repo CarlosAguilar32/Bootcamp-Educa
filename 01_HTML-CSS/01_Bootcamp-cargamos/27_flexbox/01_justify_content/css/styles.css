@@ -1,0 +1,49 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin:5% 0;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    background-color: steelblue;
+    height: 50vh;
+    /*ACTIVANDO FLEXBOX*/
+    display: flex;
+    
+    /* FLEX FLOW -> <DIRECCION> <DESBORDAMIENTO> */
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; 
+        -> desactivar desbordamiento 
+        UNA LINEA */
+    /* flex-wrap: wrap;  
+        ->activar desbordamiento 
+        MULTILINEAS */
+    flex-flow: row wrap;
+
+    /*ALINEACION VERTICAL MULTILINEA*/
+     /* por defecto : stretch */
+    align-content: flex-start;
+
+    /*ALINEACION VERTICAL UNILINEA*/
+    /* por defecto : stretch */
+    /* align-items: stretch; */
+
+    /*ALINEACION HORIZONTAL*/
+    /* por defecto : flex-start */
+    justify-content: flex-start;
+
+}
+.item{
+    width: 100px ;
+    height: 100px;
+    background: gainsboro;
+    border: 2px solid;
+    box-sizing: border-box;
+    font-size: x-large;
+}

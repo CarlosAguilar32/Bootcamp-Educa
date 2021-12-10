@@ -1,0 +1,20 @@
+
+.colorrojo{
+    color: #FF0000;
+}
+.colordorado{
+    color: #FFD700;
+}
+.colorverde{
+    color: #32CD32;
+}
+.colorazul{
+    color: #2600ff;
+}
+
+table, td, th{
+    border-collapse:collapse;
+    padding: 5px;
+    border: 1px solid black;
+}
+

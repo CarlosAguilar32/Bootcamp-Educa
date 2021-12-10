@@ -1,0 +1,12 @@
+table,td, th {
+  width: 600px;
+  height: 15px;
+  border-collapse: collapse;
+  padding: 5px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+table tr:nth-child(3n + 2) {
+  background-color: red;
+}

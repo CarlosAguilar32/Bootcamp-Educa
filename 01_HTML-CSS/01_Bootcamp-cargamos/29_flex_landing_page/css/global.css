@@ -1,0 +1,137 @@
+@import url("vars.css");
+    
+  /* COLORES DE FONDO */
+   .bg-primary{
+    background: var(--primary-color);
+   }
+   .bg-secondary{
+    background: var(--secondary-color);
+   }
+   .bg-dark{
+    background: var(--dark-color);
+   }
+   .bg-info {
+    background: var(--info-color);
+   }
+   .bg-alt {
+    background: var(--alt-color);
+   }
+   
+   /* ALTOS DE PANTALLA GENERICOS*/
+   .h-10 {
+    height: 10vh;
+    }
+   .h-25 {
+       height: 25vh;
+   }
+   .h-50 {
+       height: 50vh;
+   }
+   .h-100 {
+       height: 100vh;
+   }
+   /* FLEXBOX GENERICOS */
+   .d-flex {
+       display: flex;
+   }
+   .flex-column{
+       flex-direction: column ;
+   }
+   .flex-row {
+       flex-direction: row ;
+   }
+   /* BASES GENERICOS*/
+   
+   .basis-15{
+       flex-basis: 15%; 
+   }
+   .basis-25{
+       flex-basis: 25%; 
+   }
+   .basis-30{
+       flex-basis: 30%; 
+   }
+   .basis-50{
+       flex-basis: 50%; 
+   }
+   .basis-75{
+       flex-basis: 75%; 
+   }
+   
+   /* FLEX GENERICOS */
+   
+   .flex-15{
+       flex:15; /* Flex-grow (N) Flex-shrink :0 Flex-basis: 0*/
+   }
+   .flex-20{
+       flex:20; 
+   }
+   .flex-25{
+       flex:25; 
+   }
+   .flex-50{
+       flex:50;
+   }
+   .flex-60{
+       flex:50;
+   }
+   .flex-75{
+       flex:75;
+   }
+   
+   /* GROW Y SHRINK GENERICOS */
+   
+   .grow-1{
+       flex-grow: 1; /*Crece*/
+   }
+   .grow-0{
+       flex-grow: 0; /*No crece*/
+   }
+   .shrink-0{
+       flex-shrink: 0;  /*No reajustes tamaño*/
+   }
+   
+    /* ALINEACIONES PRINCIPALES (Default:horizontal)*/
+   
+    .justify-content-between{
+        justify-content: space-between;
+    }
+    .justify-content-center{
+        justify-content: center;
+    }
+    .justify-content-around{
+        justify-content: space-around;
+    }
+    .justify-content-start{
+        justify-content: flex-start;
+    }
+    .justify-content-end{
+        justify-content: flex-end;
+    }
+
+     /* ALINEACIONES SECUNDARIAS (Default:vertical) */
+
+     .align-items-center{
+         align-items: center;
+     }
+     .align-items-end{
+        align-items: flex-end;
+    }
+    .align-items-start{
+        align-items: flex-start;
+    }
+
+    /*MARGENES Y PADDINGS*/
+
+    .pa-1{
+        padding:10px;
+    }
+    .pa-2{
+        padding:20px;
+    }
+    .ma-1{
+        margin: 10px;
+    }
+    .ma-2{
+        margin: 20px;
+    }

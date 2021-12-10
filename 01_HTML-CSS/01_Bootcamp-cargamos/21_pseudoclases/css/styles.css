@@ -1,0 +1,52 @@
+a:link{
+    color: green;
+    font-weight: bold;
+}
+a:visited{
+    color: purple;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: cyan;
+    padding: 2px;
+}
+
+
+div:hover a{
+   background-color: steelblue;
+   color: white;  
+}
+
+a:active{
+    border: 10px solid #ff0000;
+    padding: 2px;
+}
+
+div,select {
+    margin :8px; 
+}
+input:checked + label{
+    color:purple;
+}
+input[type='radio']:checked {
+    box-shadow: 0 0 0 3px orange;
+}
+
+input[type='checkbox']:checked {
+    box-shadow: 0 0 0 3px hotpink;
+}
+/* Solo funciona en navegadores Windows*/
+option:checked{
+    text-shadow: 0 0 3px lime;
+    color: red;
+}
+
+
+
+
+
+
+
+

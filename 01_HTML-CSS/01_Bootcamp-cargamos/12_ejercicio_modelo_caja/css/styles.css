@@ -1,0 +1,38 @@
+#datos_libro {
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid #0F0;
+
+  /* Arriba/abajo - Derecha/Izquierda*/
+  /* padding: 0px 10px; */
+
+  /* Arriba - Derecha - Abajo - Izquierda*/
+  /* padding: 0px 10px 0px 10px; */
+}
+.borde_gris{
+    border: 2px solid grey;
+}
+h1 {
+  padding: 10px;
+  margin: 30px 0px;
+  border: 2px solid #0000FF;
+  /* margin-top: 30px;
+    margin-bottom: 30px; */
+}
+#subtitulo_datos_libro {
+  padding: 5px;
+  margin: 15px 0px;
+}
+#datos_libro li {
+  margin: 15px;
+}
+
+
+
+
+
+
+
+
+
+

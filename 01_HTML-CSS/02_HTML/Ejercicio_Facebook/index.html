@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Welcome to Facebook</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <img src="images/Logo.png" alt="Facebook" width="120" />
+
+        <form id="form_login" method="post" action="login.php">
+          <span id="username">
+            <input type="text" name="username" />
+          </span>
+
+          <span id="contraseña">
+            <input type="password" name="password" />
+          </span>
+
+          <input type="submit" value="Log In" />
+          <a href="#">Forgotten account?</a>
+        </form>
+      </div>
+    </header>
+    <main>
+      <form id="form_register" action="register" method="post">
+        <h1>Ceate a new account</h1>
+        <p>It's free and always will be</p>
+
+        <div class="inline">
+          <input type="text" placeholder="First name" />
+
+          <input type="text" placeholder="Surname" />
+        </div>
+
+        
+
+        <input class="block" type="email" placeholder="Mobile number or email address" />
+        
+        <input class="block" type="password" name="password" placeholder="New password" />
+        <input class="block" type="password" name="password" placeholder="Confirm password" />
+        
+        <h4 class="mt-2">Birthday</h4>
+        <div class="mb-2">
+          <input type="date" name="birthday" />
+          <a href="#">Why do I need to provide my date of birth?</a>
+        </div>
+       
+
+        <label for="opt-female">
+          <input id="opt-female" type="radio" name="genero" value="female" />
+          Female
+        </label>
+
+        <label for="opt-male">
+          <input id="opt-male" type="radio" name="genero" value="male" />
+          Male
+        </label>
+
+        <p class="mt-2 info ">
+          By clicking Create Account, you agree to our <a href="#">Terms</a> and confirm
+          that you have read our <a href="#">Data Policy</a>, including our
+          <a href="#">Cookie Use Policy</a>. You may receive SMS messeage notifications
+          from Facebook and can opt out at any time.
+        </p>
+
+        <input class="mt-2" id="registrar" type="submit" value="Create Account">
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+* {
+  font-size: large;
+}
+form{
+  margin-bottom: 100vh;
+}
+input,
+select {
+  display: block;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline;
+}

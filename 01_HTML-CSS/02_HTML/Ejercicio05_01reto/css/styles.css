@@ -1,0 +1,80 @@
+@font-face{
+    font-family: "Zen";
+    src: url("../fonts/zen/zen.woff2");
+}
+*{
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+#cuerpo {
+  width: 900px;
+  height: 700px;
+  background-color:grey;
+}
+
+#i1 {
+  width: 350px;
+  height: 300px;
+  background-color: white;
+  float: left;
+  margin: 20px 40px;
+  box-shadow: 3px 7px 1px 2px rgb(61, 53, 53);
+}
+
+#i2 {
+  width: 350px;
+  height: 300px;
+  background-color: white;
+  float: right;
+  margin: 20px 40px;
+  box-shadow: 3px 7px 1px 2px rgb(61, 53, 53);
+
+}
+
+#i3 {
+  width: 350px;
+  height: 300px;
+  background-color: white;
+  float: left;
+  margin: 20px 40px;
+  box-shadow: 3px 7px 1px 2px rgb(61, 53, 53);
+
+}
+
+#i4 {
+  width: 350px;
+  height: 300px;
+  background-color: white;
+  float: right;
+  margin: 20px 40px;
+  box-shadow: 3px 7px 1px 2px rgb(61, 53, 53);
+
+}
+.precio{
+    padding-left: 200px;
+
+}
+h2{
+    padding: 5px 50px ;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    
+}
+p{
+    padding: 5px 100px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+body{
+    width: 900px;
+  height: 700px;
+  padding: 20px 0px;
+    margin: auto;
+}
+html{
+    background-color: wheat;
+}
+img{
+    width: 35px;
+    height: 35px;
+    margin: -5px -1px;
+
+}
