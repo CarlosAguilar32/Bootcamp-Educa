@@ -148,5 +148,64 @@ console.log()
 /*--------------------Busqueda y comprobación--------------------------*/ 
 
 
+const sports = [
+    "Golf", // 0
+    "BasketBall", // 1
+    "Tenis", // 2
+    "Surfing", // 3
+    "Arqueria", // 4
+    "Karate", // 5
+    "Ciclismo", // 6
+    "BasketBall", // 7
+    "Karate", // 8
+  ];
+  const colores = "rojo, azul, verde";
+  
+  // Validar que una variable es del tipo Array
+  if (Array.isArray(sports)) {
+    console.log("Sports es un arreglo!");
+  } else {
+    console.log("Sports NO es un arreglo!");
+  }
+  
+  if (Array.isArray(colores)) {
+    console.log("Colores Es un arreglo!");
+  } else {
+    console.log("Colores NO es un arreglo!");
+  }
+  
+  // Verificar si existe un elemento  .includes()
+  
+  console.log(sports.includes("Tenis")); // TRUE
+  console.log(sports.includes("Tenis", 3)); // FALSE
+  
+  if (sports.includes("Arqueria")) {
+    console.log("El deporte Arqueria existe en la lista");
+  } else {
+    console.log("El deporte Arqueria NO esta en la lista");
+  }
+  
+  if (sports.includes("Box")) {
+    console.log("El deporte Box existe en la lista");
+  } else {
+    console.log("El deporte Box NO esta en la lista");
+  }
+  
+  // Obtener la posicion(Indice) de un elemento  .indexOf()
+  console.log("UTILIZANDO INDEX_OF");
+  console.log(sports.indexOf("Karate")); // 5
+  console.log(sports.indexOf("Judo")); // -1 => No lo encontre
+  
+  // La posicion de la ultima aparicion
+  console.log("UTILIZANDO LAST_INDEX_OF");
+  console.log(sports.lastIndexOf("BasketBall")); // 7
+  
+  console.log(sports.lastIndexOf("Karate")); // 7
+  //                             Elemento , hasta
+  console.log(sports.lastIndexOf("Karate", 4)); // -1
+  console.log(sports.lastIndexOf("Karate", 6)); // 5
+  console.log(sports.lastIndexOf("Karate", 8)); // 8
+  
+
 
 
