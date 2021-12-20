@@ -41,14 +41,14 @@ console.log(Number.parseInt(binario, 2));
 console.log(Number.parseInt(octal, 8));
 console.log(Number.parseInt(hexadecimal, 16));
 
-// Formatos numéricos
+// Formatos numericos
 let number = 1.5;
 
 console.log(number.toExponential(2)); // Notacion Científica
 console.log(number.toFixed(2));
 console.log(number.toPrecision(1)); // Math.round()
 
-// Objetos STRING
+// Objeto String
 
 const texto1 = "Hola a todos";
 const texto2 = "pablito clavó un clavito en la calva de un calvito";
@@ -63,10 +63,9 @@ console.log(texto4);
 
 console.log(`El texto: "${texto2}" tiene ${texto2.length} caracteres`);
 
-
 let frase1 = "Camarón que se duerme se lo lleva la corriente";
 let frase2 = "En boca cerrada no entran moscas";
-let frase3 = "Feliz como una lombriz";
+let frase3 = new String("Feliz como una lombriz");
 let frase4 = "De tal palo tal astilla";
 let frase5 = "Mal de muchos, consuelo de pocos";
 let frase6 = "'¡Chinchilete!', '¡Yo machete!'";
@@ -83,7 +82,18 @@ console.log(frase3.charAt(6)); // c
 console.log(frase3[11]); // U
 console.log(frase3[15]); // l
 
-// Utili
+// Utilizando concatenadores
+console.log(frase7);
+frase7 = frase7.concat(" que");
+frase7 = frase7 + " tonto";
+frase7 = `${frase7} que no `;
+frase7 += "lo haga";
+console.log(frase7);
+
+let direccion = "Calle Santa Rosa " + 1 + 2 + 3; // Calle Santa Rosa 123
+let direccion = "Calle Santa Rosa " + (1 + 2 + 3); // Calle Santa Rosa 6
+console.log(direccion);
+
 // Buscar la posición de una palabra o letra
 
 frase7 = new String(frase7);
@@ -97,7 +107,6 @@ console.log(frase7.indexOf("que")); // 15
 console.log(frase7.indexOf("que", 18)); // 25
 console.log(frase7.indexOf("que", 38)); // -1  => no existe en la frase desde la pos 38
 
-
 // Busqueda se realiza de abajo hacia arriba
 console.log(frase7);
 
@@ -105,28 +114,7 @@ console.log(frase7.lastIndexOf("que")); // 35
 console.log(frase7.lastIndexOf(" ")); // 35
 console.log(frase7.lastIndexOf("que", 24)); // 15
 
-console.log(frase7.lastIndexOf(" ", 32)); // 28
-
-
-// Busquedas en los strings (Cademna)
-
-console.log(frase10);
-console.log(frase10.startsWith("No hay peor")); // true
-console.log(frase10.startsWith("Ciego")); // false => La frase no empieza con esa palabra "Ciego" 
-console.log(frase10.startsWith("No")); // true
-console.log(frase10.startsWith("no")); // false Porque N no es mayuscula
-
-
-console.log(frase10.endsWith("ver")); // true
-console.log(frase10.endsWith("iere ver")); // true;
-console.log(frase10.endsWith("kiere ver")); // false;
-
-console.log(frase10.endsWith("ciego", 17)); // No hay peor ciego
-
-console.log(frase10.includes("peor")); // true => Si existe la palabra en la frase
-console.log(frase10.includes("chahuistle")); // false => No existe la palabra en la frase
-
-
+// Busquedas con startsWith, endsWith, search & match (REGEX)
 
 frase1 = new String(frase1);
 console.log(frase1);
@@ -139,6 +127,5 @@ frase9 = new String(frase9);
 console.log(frase9.search("^Ya nos cayo el chahuistle$"));
 
 let numero = "163";
-console.log(numero.search("^[0-9]*$")); // Valida todos sean numeros
+console.log(numero.match("^[0-9]*$")); // Valida todos sean numeros
 console.log(numero.search("^[0-9][0-5][0-9]$")); // Valida 3 primeros caracteres sean numeros pero el segundo solo hasta el 0-5
-
