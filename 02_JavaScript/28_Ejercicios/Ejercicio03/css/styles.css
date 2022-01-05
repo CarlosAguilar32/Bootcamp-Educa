@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color:#000000;
+    margin: 10px;
+}
+button{
+    margin: 10px;
+    height: 25px;
+}
+select{
+    margin: 10px;
+}
