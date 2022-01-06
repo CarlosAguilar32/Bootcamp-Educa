@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color:#000000;
+    margin: 10px;
+}
+button{
+    margin: 10px;
+    width: 65px;
+    height: 25px;
+}
