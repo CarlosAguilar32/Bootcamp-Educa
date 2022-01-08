@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Navengando</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="header">
+        <h1>
+          Titular
+          <strong> Principal </strong>
+        </h1>
+      </div>
+      <p>Parrafo de descripción</p>
+      <a href="/">Enlace</a>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Navengando</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="header">
+        <h1>
+          Titular
+          <strong> Principal </strong>
+        </h1>
+      </div>
+      <p>Parrafo de descripción</p>
+      <a href="/">Enlace</a>
+    </div>
+    <script>
+    
+    console.log(document.body.children); // [div,script]
+    console.log(document.body.children.length); // 2
+
+    console.log(document.body.children[0]); // <div id="app" ..
+    console.log(document.body.children[1]); // <script ...
+    console.log(document.body.parentElement); // <html>
+      
+      /* DESCENDIENDO */
+
+    const app = document.querySelector("#app");
+    console.log(app.children); // [div.header, p, a]
+
+    console.log(app.firstElementChild); // div.header -> app.children[0]
+
+    console.log(app.lastElementChild); // a -> app.children[n-1] -> [3-1 = 2]
+
+    const h1 = app.children[0].children[0]; // h1
+    //const h1 = app.firstElementChild.firstElementChild; // h1
+    console.log(h1);
+
+  const strong = app.children[0].children[0].children[0]; // strong
+  console.log(strong);
+      
+      
+      /* ASCENDER */
+
+    const app2 =
+      strong.parentElement.parentElement.parentElement;
+
+    // Valido que sean los mismos app
+console.log(app == app2);
+
+
+    
+    </script>
+  </body>
+</html>
+
+
+
+<!-- EVENTOS DE FORMULARIO-->
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Javascript Handling the focus event</title>
+  </head>
+  <body>
+    <form
+      action="save.php"
+      method="post"
+      onsubmit="validateForm(event,this)"
+    >
+      <label for="txt_name">Ingresa tu nombre :</label>
+      <input
+        id="txt_name"
+        name="name"
+        type="text"
+        placeholder="John"
+        onfocus="highlightInput(this)"
+        onblur="clearInput(this)"
+      />
+      <br /><br />
+      <label for="txt_lastname">Ingresa tu apellido:</label>
+      <input
+        id="txt_lastname"
+        type="text"
+        name="lastname"
+        placeholder="Doe"
+        onfocus="highlightInput(this)"
+        onblur="clearInput(this)"
+      />
+      <br /><br />
+      <label for="txt_lastname">Género:</label>
+      <select
+        name="genre"
+        onchange="showOption(event,this)"
+      >
+        <option disabled>Seleciona un genero</option>
+        <option value="male">Soy hombre</option>
+        <option value="female">Soy Mujer</option>
+        <option value="no-binary">
+          Prefiero no decirlo
+        </option>
+      </select>
+
+      <br />
+      <br />
+
+      <button type="submit">Enviar</button>
+    <script >
+    function highlightInput(elm) {
+      console.log(`dando foco ${elm.id}`);
+      elm.style.background = "lightgreen";
+    }
+      
+      function clearInput(elm) {
+        console.log(`perdio foco ${elm.id}`);
+        elm.style.background = "white";
+      }
+      
+      function showOption(event, elm) {
+      // Muestra el valor seleccionado desde el evento
+      console.log(event.target.value);
+      // Muestra el valor seleccionado desde el elemento
+      console.log(elm.value);
+      //Obtener el indice de la opción seleccionada
+      console.log(event.target.selectedIndex);
+      console.log(elm.selectedIndex);
+    }
+      
+  function validateForm(event, elem) {
+  event.preventDefault();
+  console.log(elem);
+  console.log(event);
+  // Validar los campos del formulario
+
+  alert("Se valido correctamente");
+  // Envia el formulario
+  elem.submit();
+}
+
+
+    </script>
+  </body>
+</html> -->
+
+
+<!-- EVENTOS DE FORMULARIO-->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Javascript Handling the focus event</title>
+  </head>
+  <body>
+    <form
+      action="save.php"
+      method="post"
+      onsubmit="validateForm(event,this)"
+    >
+      <label for="txt_name">Ingresa tu nombre :</label>
+      <input
+        id="txt_name"
+        name="name"
+        type="text"
+        placeholder="John"
+        onfocus="highlightInput(this)"
+        onblur="clearInput(this)"
+      />
+      <br /><br />
+      <label for="txt_lastname">Ingresa tu apellido:</label>
+      <input
+        id="txt_lastname"
+        type="text"
+        name="lastname"
+        placeholder="Doe"
+        onfocus="highlightInput(this)"
+        onblur="clearInput(this)"
+      />
+      <br /><br />
+      <label for="txt_lastname">Género:</label>
+      <select
+        name="genre"
+        onchange="showOption(event,this)"
+      >
+        <option disabled>Seleciona un genero</option>
+        <option value="male">Soy hombre</option>
+        <option value="female">Soy Mujer</option>
+        <option value="no-binary">
+          Prefiero no decirlo
+        </option>
+      </select>
+
+      <br />
+      <br />
+    </form>
+    <button type="submit">Enviar</button>
+    <script>
+      function highlightInput(elm) {
+        console.log(`dando foco ${elm.id}`);
+        elm.style.background = "lightgreen";
+      }
+
+      function clearInput(elm) {
+        console.log(`perdio foco ${elm.id}`);
+        elm.style.background = "white";
+      }
+
+      function showOption(event, elm) {
+        // Muestra el valor seleccionado desde el evento
+        console.log(event.target.value);
+        // Muestra el valor seleccionado desde el elemento
+        console.log(elm.value);
+        //Obtener el indice de la opción seleccionada
+        console.log(event.target.selectedIndex);
+        console.log(elm.selectedIndex);
+      }
+
+      function validateForm(event, elem) {
+        event.preventDefault();
+        console.log(elem);
+        console.log(event);
+        // Validar los campos del formulario
+
+        alert("Se valido correctamente");
+        // Envia el formulario
+        elem.submit();
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Local Storage</title>
+  </head>
+  <body>
+    <button onclick="login()">Iniciar Sesión</button>
+    <p id="nombre_usuario"></p>
+
+    <script>
+   	let time = sessionStorage.getItem("time");
+
+    function login() {
+      // check browser support
+      if (typeof Storage !== undefined) {
+        console.log("Almacenamiento soportado");
+        localStorage.setItem("username", "Orville46");
+        contarTiempo();
+      } else {
+        console.log("Upps!");
+      }
+    }
+
+    function logout() {
+      localStorage.removeItem("username");
+      time = 0;
+      sessionStorage.removeItem("time");
+    }
+
+    function contarTiempo() {
+      if (localStorage.getItem("username")) {
+        time++;
+        sessionStorage.setItem("time", time);
+      }
+    }
+
+    function mostrarInfo() {
+      const user = document.getElementById("nombre_usuario");
+      user.innerHTML = ` Usuario conectado: ${localStorage.getItem(
+        "username"
+      )} <br>  Tiempo de conexion : ${time} segundos`;
+    }
+
+    setInterval(() => {
+      mostrarInfo();
+      contarTiempo();
+    }, 1000);
+
+    </script>
+  </body>
+</html>
+ -->
+

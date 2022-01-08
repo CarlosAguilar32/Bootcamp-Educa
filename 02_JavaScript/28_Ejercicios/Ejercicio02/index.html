@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Ejercicio 02</title>
+</head>
+<body>
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+table, tr, td {
+    border: 2px solid black;
+    padding:1px;
+    margin:10%;
+}
+button{
+    margin: 5% 10%;
+    width: 150px;
+}
+  </style>
+    <table id="tabla">
+        <tr>
+            <td>Row1 cell1</td>
+            <td>Row2 cell1</td>
+        </tr>
+        <tr>
+            <td>Row1 cell2</td>
+            <td>Row2 cell2</td>
+        </tr>
+    </table>
+    <button id="btn">Insert Row</button>
+    <script>
+    function agregar(){
+    const table = document.querySelector("#tabla");
+    const row = table.insertRow(0);
+    row.innerHTML = "<td> New Cell 1</td><td>New Cell 2</td>";
+    }
+
+    document.querySelector("#btn").onclick = function(){
+    agregar();
+    }
+
+    console.log(tabla);
+  </script>
+</body>
+</html>
