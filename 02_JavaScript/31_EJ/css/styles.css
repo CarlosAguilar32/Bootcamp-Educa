@@ -1,0 +1,35 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+
+header {
+  position: relative;
+  background-color: black;
+  height: 40vh;
+  width: 100%;
+  overflow:hidden;
+}
+
+header > video {
+  position: absolute;
+  top: 50%;
+  left:50%;   
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.781);
+    z-index: 1;  
+}
+header > .container {
+    position: relative;
+    z-index: 2;
+}
+
