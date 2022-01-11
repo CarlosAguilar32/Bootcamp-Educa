@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section div{
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+section img{
+    width: 100%;
+    
+}
