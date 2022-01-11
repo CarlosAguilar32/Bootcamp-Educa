@@ -1,0 +1,13 @@
+.bg-green{
+    background-color: lightgreen;
+}
+.bg-purple{
+    background-color: #a6a8dd;
+}
+.bg-red{
+    background-color: red;
+}
+
+.row>*{
+    height: 40vh;
+}

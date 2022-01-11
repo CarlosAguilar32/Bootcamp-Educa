@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Bootstrap</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!--FLEXBOX  (HABILITAR FLEX)-->
+
+    <div class="d-flex border bd-highlight p-2">I'm flex-box container</div>
+
+    <div class="d-inline-flex border bd-highlight p-2">
+      I'm flex-box container
+    </div>
+
+    <!--DIRECCIÓN  (ROW & COLUMN)-->
+
+    <div class="d-flex border bd-highlight p-2 flex-column">
+      <article class="bd-highlight">Article A</article>
+      <article class="bd-highlight">Article B</article>
+      <article class="bd-highlight">Article C</article>
+    </div>
+
+    <div class="d-flex border bd-highlight p-2 flex-row">
+      <article class="bd-highlight">Article A</article>
+      <article class="bd-highlight">Article B</article>
+      <article class="bd-highlight">Article C</article>
+    </div>
+
+    <div class="d-flex border bd-highlight p-2 flex-column-reverse">
+      <article class="bd-highlight">Article A</article>
+      <article class="bd-highlight">Article B</article>
+      <article class="bd-highlight">Article C</article>
+    </div>
+
+    <div class="d-flex border bd-highlight p-2 flex-row-reverse">
+      <article class="bd-highlight">Article A</article>
+      <article class="bd-highlight">Article B</article>
+      <article class="bd-highlight">Article C</article>
+    </div>
+
+    <div class="d-flex border bd-highlight p-2 flex-column flex-sm-row">
+      <div class="bd-highlight">Article A</div>
+      <div class="bd-highlight">Article B</div>
+      <div class="bd-highlight">Article C</div>
+    </div>
+
+    <!--ALINEACION EJE PRINCIPAL-->
+
+    <div
+      class="d-flex border bd-highlight p-2 flex-row justify-content-between h-25"
+    >
+      <div class="bd-highlight">Article A</div>
+      <div class="bd-highlight">Article B</div>
+      <div class="bd-highlight">Article C</div>
+    </div>
+    <br />
+    <div
+      class="d-flex border bd-highlight p-2 flex-column justify-content-evenly h-25"
+    >
+      <div class="bd-highlight">Article A</div>
+      <div class="bd-highlight">Article B</div>
+      <div class="bd-highlight">Article C</div>
+    </div>
+
+    <div
+      class="d-flex border bd-highlight p-2 flex-row justify-content-between align-items-end h-25"
+    >
+      <div class="bd-highlight">Article A</div>
+      <div class="bd-highlight">Article B</div>
+      <div class="bd-highlight">Article C</div>
+    </div>
+    <br />
+    <div
+      class="d-flex border bd-highlight p-2 flex-column justify-content-evenly align-items-start h-25"
+    >
+      <div class="bd-highlight">Article A</div>
+      <div class="bd-highlight">Article B</div>
+      <div class="bd-highlight">Article C</div>
+    </div>
+
+    <div
+      class="d-flex border bd-highlight p-2 flex-row justify-content-between align-items-end h-25"
+    >
+      <div class="bd-highlight">Article A</div>
+      <div class="bd-highlight align-self-start">Article B</div>
+      <div class="bd-highlight align-self-center">Article C</div>
+    </div>
+    <br />
+    <div
+      class="d-flex border bd-highlight p-2 flex-column justify-content-evenly align-items-start h-25"
+    >
+      <div class="bd-highlight">Article A</div>
+      <div class="bd-highlight align-self-end">Article B</div>
+      <div class="bd-highlight align-self-center">Article C</div>
+    </div>
+
+    <!--CRECIMIENTO & DECRECIMIENTO  (ROW & COLUMN)-->
+
+    <div class="d-flex bd-highlight">
+      <div class="p-2 flex-grow-1 bd-highlight">Flex item</div>
+      <div class="p-2 bd-highlight">Flex item</div>
+      <div class="p-2 bd-highlight">Third flex item</div>
+    </div>
+
+    <div class="d-flex bd-highlight">
+      <div class="p-2 w-100 bd-highlight">Flex item</div>
+      <div class="p-2 flex-shrink-1 bd-highlight">Flex item</div>
+    </div>
+
+    <div class="d-flex bd-highlight flex-wrap">
+      <div class="bd-highlight">Item1</div>
+      <div class="bd-highlight">Item2</div>
+      <div class="bd-highlight">Item3</div>
+      <div class="bd-highlight">Item3</div>
+      <div class="bd-highlight">Item3</div>
+      <div class="bd-highlight">Item3</div>
+      <div class="bd-highlight">Item3</div>
+      <div class="bd-highlight">Item3</div>
+      <div class="bd-highlight">Item3</div>
+      <div class="bd-highlight">Item3</div>
+      <div class="bd-highlight">Item3</div>
+      <div class="bd-highlight">Item3</div>
+      <div class="bd-highlight">Item3</div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
+<!-- https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
