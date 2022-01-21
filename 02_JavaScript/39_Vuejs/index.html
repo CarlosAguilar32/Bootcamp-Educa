@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Hola soy el titulo de la página</title>
+      <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  </head>
+  <body>
+
+    <!-- <div id="app">
+        <h1 v-bind:title="message">Hellos world</h1>
+        <span v-if="seen">Ahora me ves</span>
+    </div> -->
+
+    <!-- <div id="app-4">
+        <ol>
+            <li v-for = "todo in todos">
+                {{todo.text}}
+            </li>
+        </ol>
+    </div> -->
+
+    <!-- <div id="app">
+        <h1 v-bind:title="message">To do List</h1>
+        <span v-if="seen">Ahora me ves</span>
+        
+        <button v-on:click="addTask">Agregar</button>
+        <ul>
+            <li v-for="task in tasks">
+                {{task.text}}
+            </li>
+        </ul>
+        <span>{{tasks.length}}</span>
+    </div> -->
+
+    <!-- <div id="app">
+        <h1 v-bind:title="message">To do List</h1>
+        <span v-if="seen">Ahora me ves</span>
+        
+        <input type="text" v-model="newTask">
+
+        <button v-on:click="addTask">Agregar</button>
+        <ul>
+            <todo-item v-for="task in tasks" v-bind:task="task">
+            </todo-item>
+        </ul>
+        <span>{{tasks.length}}</span>
+    </div> -->
+
+    <div id="app">
+        <h1 v-bind:title="message">To do List</h1>
+        <span v-if="seen">Ahora me ves</span>
+        
+        <input type="text" v-model="newTask">
+
+        <button v-on:click="addTask">Agregar</button>
+        <ul>
+            <todo-item v-for="task in tasks" v-bind:task="task" v-bine:done="task.done">
+            </todo-item>
+        </ul>
+        <span>Total de tareas: {{tasks.length}}</span>
+    </div>
+
+    <script src="js/item.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
