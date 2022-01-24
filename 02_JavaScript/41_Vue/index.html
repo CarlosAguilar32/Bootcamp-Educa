@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
+    </head>
+    <body>
+        <h1>Demo App</h1>
+
+        <div id="app">
+            <router-link to="/a">Ir a A</router-link>
+            <br>
+            <router-link to="/b">Ir a B</router-link>
+
+            <router-view></router-view>
+        </div>
+
+        <script src="components/a.js"></script>
+        <script src="components/b.js"></script>
+        <script src ="js/script.js"></script>
+    </body>
+</html>
