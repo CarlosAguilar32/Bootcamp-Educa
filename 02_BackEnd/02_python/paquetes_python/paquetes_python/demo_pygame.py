@@ -1,4 +1,4 @@
-#debera instalar la libreria pip install pygame
+#debera instalar la libreria 
 import pygame
 #Se inicializa la librería
 pygame.init()
