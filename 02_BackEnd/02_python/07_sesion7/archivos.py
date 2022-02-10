@@ -1,35 +1,41 @@
-"""
-CSV Valores separados por comas
-Es un formato de archivo simple que se utiliza
-para almacenar datos tabulares, como una hoja de
-cálculo o una BD
-Es un formato muy común para Data Sciencie
-"""
 import csv
-#TODO| Esto me permite abrir el archivo en la variable asignada "data_cargamos"
-with open('cargamos.csv') as data_cargamos:
-    #TODO| Leer el archivo linea por linea
-    csv_leer=csv.reader(data_cargamos)
-    #TODO| Conviirtiendo o Cast el archivo a una colección tipo List
-    lista_estudiantes=list(csv_leer)
-    print(lista_estudiantes)
 
-#TODO| INDICADORES:
-#TODO| alumnos por curso:
+def data_alumnos_csv():
+    with open('02_BackEnd/02_python/07_sesion7/cargamos.csv','r') as data_cargamos:
+        csv_leer=csv.reader(data_cargamos, delimiter=";")
+        lista_estudiantes=list(csv_leer)
+        return lista_estudiantes
+
+def data_alumnos_csv():
+    with open('02_BackEnd/02_python/07_sesion7/valores.csv','r') as data_cargamos:
+        csv_leer=csv.reader(data_cargamos, delimiter=";")
+        lista_estudiantes=list(csv_leer)
+        return lista_estudiantes
+
+
+# print(data_alumnos_csv())
 def cursos_alumnos(estudiantes,curso_param):
-    """
-    #TODO| Esta función me permite filtrar a los alumnos por curso
-    Args:
-        ? estudiantes ([type]): "Es una lista donde se almacena la información del curso"
-        ? curso_param ([type]): "Es el filtro que se va a aplicar de acuerdo al curso que queremos mostrar"
-    """
     estudiantes_curso=[]
-    for estudiante, curso in estudiantes:
-        if curso==curso_param:
-            estudiantes_curso.append((estudiante,curso))
+    for CODIGO,NOMBRE,APELLIDOS,CURSO,P1,P2,P3,PRO in estudiantes:
+        if CURSO==curso_param:
+            estudiantes_curso.append((NOMBRE,CURSO))
     return estudiantes_curso
 
 
+#curso=input("Ingrese el curso a mostrar sus estudiantes: ")
+#print(cursos_alumnos(data_alumnos_csv(),curso))
 
+def nota_mayor_curso(estudiantes):
+    nota_mayor=20
+    for CODIGO,NOMBRE,APELLIDOS,CURSO,P1,P2,P3,PRO in estudiantes:
+        # print(type(float(PRO)))
+        # print(type(nota_mayor))
+        
+        if PRO<=nota_mayor:
+            nota_mayor=PRO 
+        return nota_mayor
+print(nota_mayor_curso(data_alumnos_csv()))
 
+#? Crear el indicador que ,e visualize el nombre y el apellido del alumno 
+#? Que saco la nota más alta del curso
 
