@@ -1,4 +1,4 @@
-Clase 15 de febrero 2022: instalaciòn de pgadmin
+Clase 15 de febrero 2022: instalación de pgadmin
 https://www.pgadmin.org/download/pgadmin-4-windows/
 
 https://www.enterprisedb.com/downloads/postgres-postgresql-downloads#windows
@@ -7,3 +7,4 @@ https://pypi.org/project/psycopg2-binary/
 
 https://id.heroku.com/login
 
+https://www.similarweb.com/
